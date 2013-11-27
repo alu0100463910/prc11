@@ -148,6 +148,9 @@ module Matriz_sf
         end
         def [](i)
             @vector[i]
+	end
+        def []=(i,j)
+            @vector[i]=j
         end
     end
     class MatrizDispersa < Matrix
