@@ -8,7 +8,6 @@ module Matriz_sf
         end
         def +(o)
             raise ArgumentError, "Matrix size must be equal" unless @filas == o.filas && @columnas == o.columnas
-
             c = MatrizDensa.new(@filas, @columnas)
             @filas.times do |i|
                 @columnas.times do |j|
@@ -289,5 +288,5 @@ module Matriz_sf
     end
 end
 
-f = Matriz_sf::MatrizDensa.new [[2,1],[-5, Matriz_sf::Fraccion.new(-3,2)]]
+
 
