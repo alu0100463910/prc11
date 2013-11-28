@@ -130,9 +130,7 @@ describe Matriz_sf do
                 it "### Sumar dos matrices dispersas" do
                         q = Matriz_sf::MatrizDispersa.new(2,2,0 => { 0 => 1, 1 => 2}, 1 => { 0 => 3, 1 => 4})
                         w = Matriz_sf::MatrizDispersa.new(2,2,0 => { 0 => 1, 1 => 2}, 1 => { 0 => 3, 1 => 4})
-
                         c = q + w
-
                         c[0][0].should eq(2)
                         c[0][1].should eq(4)
                         c[1][0].should eq(6)
@@ -142,16 +140,16 @@ describe Matriz_sf do
 
         describe "\n # Problema Propuesto \n" do
                 it "Suma de una matriz densa y una matriz dispersa" do
-                        f = Matriz_sf::MatrizDensa.new(2,2)
-                        f[0][0] = 2
-                        f[0][1] = 1
-                        f[1][0] = -5
-                        f[1][1] = Matriz_sf::Fraccion.new(-3,2)
-
+                      #  f = Matriz_sf::MatrizDensa.new(2,2)
+                      #  f[0][0] = 2
+                      #  f[0][1] = 1
+                      #  f[1][0] = -5
+                      #  f[1][1] = Matriz_sf::Fraccion.new(-3,2)
+		        
+		        f = Matriz_sf::MatrizDensa.new([[2,1],[-5, Matriz_sf::Fraccion.new(-3,2)]])
+			
                         g = Matriz_sf::MatrizDispersa.new(2,2, 1 => {1 => 1})
-
                         h = f + g
-
                         h.filas.should eq(2)
                         h.columnas.should eq(2)
                         h[0][0].should eq(2)

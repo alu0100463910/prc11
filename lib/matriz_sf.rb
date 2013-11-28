@@ -1,4 +1,4 @@
-require "matriz_sf/version"
+#require "matriz_sf/version"
 
 module Matriz_sf
     class Matrix
@@ -113,10 +113,21 @@ module Matriz_sf
     end
     class MatrizDensa < Matrix
         attr_reader :data
-        def initialize(filas,columnas)
-            @data = Array.new(filas) {Array.new(columnas)}
-            super
-        end
+	def initialize *arg
+	  case arg.size
+	    when 1
+	    #  init_array *arg
+	      m=arg.pop
+	      @data = m 
+	      super(m[0].size, m.size)
+	    when 2
+	      filas, columnas = arg
+	      @data = Array.new(filas) {Array.new(columnas)}
+	      super(filas, columnas)
+	    else
+	      "error"
+	  end
+        end	
         def [](i)
             @data[i]
         end
@@ -277,4 +288,6 @@ module Matriz_sf
         end
     end
 end
+
+f = Matriz_sf::MatrizDensa.new [[2,1],[-5, Matriz_sf::Fraccion.new(-3,2)]]
 
