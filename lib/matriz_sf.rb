@@ -60,7 +60,7 @@ module Matriz_sf
             value = -9999
             @filas.times do |i|
                 @columnas.times do |j|
-                    if self[i][j] != nil && (self[i][j] > value) ==-1
+                    if self[i][j] != nil && (self[i][j] > value) 
 		        puts self[i][j]
                         value = self[i][j]
                     end
