@@ -60,7 +60,7 @@ module Matriz_sf
             value = -9999
             @filas.times do |i|
                 @columnas.times do |j|
-                    if self[i][j] != nil && (self[i][j] > value) 
+                    if self[i][j] != nil && (self[i][j] > value)   
 		        puts self[i][j]
                         value = self[i][j]
                     end
@@ -243,7 +243,7 @@ module Matriz_sf
         end
         # Metodo que realiza comparaciones entre numeros fraccionales.
         def <=>(o)
-            return nil unless (o.instance_of? Fraccion) || (o.instance_of? Fixnum)
+           # return nil unless (o.instance_of? Fraccion) || (o.instance_of? Fixnum)
             # Comprobacion en caso de que el numero a sumar no sea fraccionario.            
             if o.instance_of? Fixnum
                # c = Fraccion.new(o,1)
@@ -253,21 +253,10 @@ module Matriz_sf
             end
         end
         def coerce(o)
-            [self,o]
+            [Fraccion.new(o,1.0),self]
         end
     end
 end
-
-a = Matriz_sf::MatrizDensa.new(2,2)
-a[0][0] = Matriz_sf::Fraccion.new(1,1)
-a[0][1] = 4
-a[1][0] = Matriz_sf::Fraccion.new(3,1)
-a[1][1] = Matriz_sf::Fraccion.new(-2,1)
-puts a.data.inspect
-puts "Max======"
-puts a.max
-puts "=========Min"
-puts a.min
 
 
 
