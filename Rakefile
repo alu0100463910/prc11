@@ -9,3 +9,8 @@ desc "Ejecutar las espectativas de la clase Matriz"
 task :local do
   sh "rspec --format documentation -Ilib -Ispec spec/matriz_sf_spec.rb"
 end
+
+desc "Crear documentacion"
+task :doc do
+  sh "rdoc"
+end
