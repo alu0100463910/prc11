@@ -207,7 +207,7 @@ entrada</p>
             
             <div class="method-source-code" id="new-source">
 <pre>
-<span class="ruby-comment"># File lib/matriz_sf.rb, line 92</span>
+<span class="ruby-comment"># File lib/matriz_sf.rb, line 106</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier">initialize</span> *<span class="ruby-identifier">arg</span>
   <span class="ruby-keyword">case</span> <span class="ruby-identifier">arg</span>.<span class="ruby-identifier">size</span>
     <span class="ruby-keyword">when</span> <span class="ruby-value">1</span>
@@ -257,7 +257,7 @@ entrada</p>
             
             <div class="method-source-code" id="5B-5D-source">
 <pre>
-<span class="ruby-comment"># File lib/matriz_sf.rb, line 107</span>
+<span class="ruby-comment"># File lib/matriz_sf.rb, line 121</span>
 <span class="ruby-keyword">def</span> <span class="ruby-operator">[]</span>(<span class="ruby-identifier">i</span>)
     <span class="ruby-ivar">@data</span>[<span class="ruby-identifier">i</span>]
 <span class="ruby-keyword">end</span></pre>
@@ -290,7 +290,7 @@ entrada</p>
             
             <div class="method-source-code" id="5B-5D-3D-source">
 <pre>
-<span class="ruby-comment"># File lib/matriz_sf.rb, line 111</span>
+<span class="ruby-comment"># File lib/matriz_sf.rb, line 125</span>
 <span class="ruby-keyword">def</span> <span class="ruby-operator">[]=</span>(<span class="ruby-identifier">i</span>,<span class="ruby-identifier">value</span>)
     <span class="ruby-ivar">@data</span>[<span class="ruby-identifier">i</span>] = <span class="ruby-identifier">value</span>
 <span class="ruby-keyword">end</span></pre>
@@ -323,7 +323,7 @@ entrada</p>
             
             <div class="method-source-code" id="traspuesta-source">
 <pre>
-<span class="ruby-comment"># File lib/matriz_sf.rb, line 115</span>
+<span class="ruby-comment"># File lib/matriz_sf.rb, line 129</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier">traspuesta</span>()
     <span class="ruby-identifier">c</span> = <span class="ruby-constant">MatrizDensa</span>.<span class="ruby-identifier">new</span>(<span class="ruby-ivar">@columnas</span>, <span class="ruby-ivar">@filas</span>)
     <span class="ruby-identifier">c</span>.<span class="ruby-identifier">filas</span>.<span class="ruby-identifier">times</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">i</span><span class="ruby-operator">|</span>
@@ -362,7 +362,7 @@ entrada</p>
             
             <div class="method-source-code" id="x-source">
 <pre>
-<span class="ruby-comment"># File lib/matriz_sf.rb, line 124</span>
+<span class="ruby-comment"># File lib/matriz_sf.rb, line 138</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier">x</span>(<span class="ruby-identifier">value</span>)
     <span class="ruby-keyword">self</span>.<span class="ruby-identifier">filas</span>.<span class="ruby-identifier">times</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">i</span><span class="ruby-operator">|</span>
         <span class="ruby-keyword">self</span>.<span class="ruby-identifier">columnas</span>.<span class="ruby-identifier">times</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">j</span><span class="ruby-operator">|</span>

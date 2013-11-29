@@ -7,6 +7,20 @@ module Matriz_sf
         def initialize(filas,columnas)
             @filas, @columnas = filas, columnas
         end
+	def encontrar ()  
+	  i,j=-1
+	   @filas.times do |i|
+                @columnas.times do |j|
+		     if (self[i][j] != nil) 
+		        if yield self[i][j]
+			  return i,j
+			end
+		     end
+		end
+	   end
+	  return i,j
+	end
+
 	#operador suma  +
         def +(o)
             raise ArgumentError, "Matrix size must be equal" unless @filas == o.filas && @columnas == o.columnas
@@ -269,6 +283,9 @@ module Matriz_sf
         end
     end
 end
+
+
+
 
 
 

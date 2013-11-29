@@ -149,5 +149,12 @@ describe Matriz_sf do
 			h.data.inspect.should == "[[2, 1], [-5, -1/2]]"
                 end
         end
+	
+	describe "\n # Problema Propuesto \n" do
+                it "Probando Funcion Encontrar" do
+		        f = Matriz_sf::MatrizDensa.new([[2,1],[5,2]])
+			f.encontrar {|e| e*e>6}.should eq [1,0]
+                end
+        end
 end
 

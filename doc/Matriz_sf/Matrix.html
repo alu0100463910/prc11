@@ -73,6 +73,8 @@
           
           <li><a href="#method-i-2D">#-</a></li>
           
+          <li><a href="#method-i-encontrar">#encontrar</a></li>
+          
           <li><a href="#method-i-max">#max</a></li>
           
           <li><a href="#method-i-min">#min</a></li>
@@ -260,7 +262,7 @@
             
             <div class="method-source-code" id="2A-source">
 <pre>
-<span class="ruby-comment"># File lib/matriz_sf.rb, line 49</span>
+<span class="ruby-comment"># File lib/matriz_sf.rb, line 63</span>
 <span class="ruby-keyword">def</span> *(<span class="ruby-identifier">o</span>)
     <span class="ruby-identifier">raise</span> <span class="ruby-constant">ArgumentError</span>, <span class="ruby-string">&quot;Columns and Rows must be equal&quot;</span> <span class="ruby-keyword">unless</span> (<span class="ruby-ivar">@columnas</span> <span class="ruby-operator">==</span> <span class="ruby-identifier">o</span>.<span class="ruby-identifier">filas</span>)
     <span class="ruby-identifier">c</span> = <span class="ruby-constant">MatrizDensa</span>.<span class="ruby-identifier">new</span>(<span class="ruby-ivar">@filas</span>,<span class="ruby-identifier">o</span>.<span class="ruby-identifier">columnas</span>)
@@ -304,7 +306,7 @@
             
             <div class="method-source-code" id="2B-source">
 <pre>
-<span class="ruby-comment"># File lib/matriz_sf.rb, line 11</span>
+<span class="ruby-comment"># File lib/matriz_sf.rb, line 25</span>
 <span class="ruby-keyword">def</span> <span class="ruby-operator">+</span>(<span class="ruby-identifier">o</span>)
     <span class="ruby-identifier">raise</span> <span class="ruby-constant">ArgumentError</span>, <span class="ruby-string">&quot;Matrix size must be equal&quot;</span> <span class="ruby-keyword">unless</span> <span class="ruby-ivar">@filas</span> <span class="ruby-operator">==</span> <span class="ruby-identifier">o</span>.<span class="ruby-identifier">filas</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-ivar">@columnas</span> <span class="ruby-operator">==</span> <span class="ruby-identifier">o</span>.<span class="ruby-identifier">columnas</span>
     <span class="ruby-identifier">c</span> = <span class="ruby-constant">MatrizDensa</span>.<span class="ruby-identifier">new</span>(<span class="ruby-ivar">@filas</span>, <span class="ruby-ivar">@columnas</span>)
@@ -352,7 +354,7 @@
             
             <div class="method-source-code" id="2D-source">
 <pre>
-<span class="ruby-comment"># File lib/matriz_sf.rb, line 30</span>
+<span class="ruby-comment"># File lib/matriz_sf.rb, line 44</span>
 <span class="ruby-keyword">def</span> <span class="ruby-operator">-</span>(<span class="ruby-identifier">o</span>)
     <span class="ruby-identifier">raise</span> <span class="ruby-constant">ArgumentError</span>, <span class="ruby-string">&quot;Matrix size must be equal&quot;</span> <span class="ruby-keyword">unless</span> <span class="ruby-ivar">@filas</span> <span class="ruby-operator">==</span> <span class="ruby-identifier">o</span>.<span class="ruby-identifier">filas</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-ivar">@columnas</span> <span class="ruby-operator">==</span> <span class="ruby-identifier">o</span>.<span class="ruby-identifier">columnas</span>
     <span class="ruby-identifier">c</span> = <span class="ruby-constant">MatrizDensa</span>.<span class="ruby-identifier">new</span>(<span class="ruby-ivar">@filas</span>, <span class="ruby-ivar">@columnas</span>)
@@ -381,6 +383,49 @@
         </div><!-- 2D-method -->
 
       
+        <div id="encontrar-method" class="method-detail ">
+          <a name="method-i-encontrar"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">encontrar</span><span
+              class="method-args">()</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            
+            
+
+            
+            <div class="method-source-code" id="encontrar-source">
+<pre>
+<span class="ruby-comment"># File lib/matriz_sf.rb, line 10</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">encontrar</span> ()  
+  <span class="ruby-identifier">i</span>,<span class="ruby-identifier">j</span>=<span class="ruby-value">-1</span>
+   <span class="ruby-ivar">@filas</span>.<span class="ruby-identifier">times</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">i</span><span class="ruby-operator">|</span>
+        <span class="ruby-ivar">@columnas</span>.<span class="ruby-identifier">times</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">j</span><span class="ruby-operator">|</span>
+             <span class="ruby-keyword">if</span> (<span class="ruby-keyword">self</span>[<span class="ruby-identifier">i</span>][<span class="ruby-identifier">j</span>] <span class="ruby-operator">!=</span> <span class="ruby-keyword">nil</span>) 
+                <span class="ruby-keyword">if</span> <span class="ruby-keyword">yield</span> <span class="ruby-keyword">self</span>[<span class="ruby-identifier">i</span>][<span class="ruby-identifier">j</span>]
+                  <span class="ruby-keyword">return</span> <span class="ruby-identifier">i</span>,<span class="ruby-identifier">j</span>
+                <span class="ruby-keyword">end</span>
+             <span class="ruby-keyword">end</span>
+        <span class="ruby-keyword">end</span>
+   <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">return</span> <span class="ruby-identifier">i</span>,<span class="ruby-identifier">j</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- encontrar-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- encontrar-method -->
+
+      
         <div id="max-method" class="method-detail ">
           <a name="method-i-max"></a>
 
@@ -400,7 +445,7 @@
             
             <div class="method-source-code" id="max-source">
 <pre>
-<span class="ruby-comment"># File lib/matriz_sf.rb, line 64</span>
+<span class="ruby-comment"># File lib/matriz_sf.rb, line 78</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier">max</span>
     <span class="ruby-identifier">value</span> = <span class="ruby-value">-9999</span>
     <span class="ruby-ivar">@filas</span>.<span class="ruby-identifier">times</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">i</span><span class="ruby-operator">|</span>
@@ -441,7 +486,7 @@
             
             <div class="method-source-code" id="min-source">
 <pre>
-<span class="ruby-comment"># File lib/matriz_sf.rb, line 76</span>
+<span class="ruby-comment"># File lib/matriz_sf.rb, line 90</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier">min</span>
     <span class="ruby-identifier">value</span> = <span class="ruby-value">999</span>
     <span class="ruby-ivar">@filas</span>.<span class="ruby-identifier">times</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">i</span><span class="ruby-operator">|</span>
