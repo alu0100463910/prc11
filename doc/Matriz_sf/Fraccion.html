@@ -1,0 +1,777 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+
+  <title>Class: Matriz_sf::Fraccion</title>
+
+  <link rel="stylesheet" href="../rdoc.css" type="text/css" media="screen" />
+
+  <script src="../js/jquery.js" type="text/javascript" charset="utf-8"></script>
+  <script src="../js/thickbox-compressed.js" type="text/javascript" charset="utf-8"></script>
+  <script src="../js/quicksearch.js" type="text/javascript" charset="utf-8"></script>
+  <script src="../js/darkfish.js" type="text/javascript" charset="utf-8"></script>
+
+</head>
+<body id="top" class="class">
+
+  <div id="metadata">
+    <div id="home-metadata">
+      <div id="home-section" class="section">
+        <h3 class="section-header">
+          <a href="../index.html">Home</a>
+          <a href="../index.html#classes">Classes</a>
+          <a href="../index.html#methods">Methods</a>
+        </h3>
+      </div>
+    </div>
+
+    <div id="file-metadata">
+      <div id="file-list-section" class="section">
+        <h3 class="section-header">In Files</h3>
+        <div class="section-body">
+          <ul>
+          
+            <li><a href="../lib/matriz_sf_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
+              class="thickbox" title="lib/matriz_sf.rb">lib/matriz_sf.rb</a></li>
+          
+          </ul>
+        </div>
+      </div>
+
+      
+    </div>
+
+    <div id="class-metadata">
+      
+      <!-- Parent Class -->
+      <div id="parent-class-section" class="section">
+        <h3 class="section-header">Parent</h3>
+        
+        <p class="link">Object</p>
+        
+      </div>
+      
+
+      
+
+      
+
+      
+      <!-- Method Quickref -->
+      <div id="method-list-section" class="section">
+        <h3 class="section-header">Methods</h3>
+        <ul class="link-list">
+          
+          <li><a href="#method-c-new">::new</a></li>
+          
+          <li><a href="#method-i-25">#%</a></li>
+          
+          <li><a href="#method-i-2A">#*</a></li>
+          
+          <li><a href="#method-i-2B">#+</a></li>
+          
+          <li><a href="#method-i-2D">#-</a></li>
+          
+          <li><a href="#method-i-2D-40">#-@</a></li>
+          
+          <li><a href="#method-i-2F">#/</a></li>
+          
+          <li><a href="#method-i-3C-3D-3E">#<=></a></li>
+          
+          <li><a href="#method-i-abs">#abs</a></li>
+          
+          <li><a href="#method-i-coerce">#coerce</a></li>
+          
+          <li><a href="#method-i-mcd">#mcd</a></li>
+          
+          <li><a href="#method-i-reciprocal">#reciprocal</a></li>
+          
+          <li><a href="#method-i-to_f">#to_f</a></li>
+          
+          <li><a href="#method-i-to_s">#to_s</a></li>
+          
+        </ul>
+      </div>
+      
+
+      
+      <!-- Included Modules -->
+      <div id="includes-section" class="section">
+        <h3 class="section-header">Included Modules</h3>
+        <ul class="link-list">
+        
+        
+          <li><span class="include">Comparable</span></li>
+        
+        
+        </ul>
+      </div>
+      
+    </div>
+
+    <div id="project-metadata">
+      
+      
+      <div id="fileindex-section" class="section project-section">
+        <h3 class="section-header">Files</h3>
+        <ul>
+        
+          <li class="file"><a href="../Gemfile.html">Gemfile</a></li>
+        
+          <li class="file"><a href="../LEAME.html">LEAME</a></li>
+        
+          <li class="file"><a href="../LICENSE_txt.html">LICENSE.txt</a></li>
+        
+          <li class="file"><a href="../Rakefile.html">Rakefile</a></li>
+        
+        </ul>
+      </div>
+      
+
+      <div id="classindex-section" class="section project-section">
+        <h3 class="section-header">Class/Module Index
+          <span class="search-toggle"><img src="../images/find.png"
+            height="16" width="16" alt="[+]"
+            title="show/hide quicksearch" /></span></h3>
+        <form action="#" method="get" accept-charset="utf-8" class="initially-hidden">
+        <fieldset>
+          <legend>Quicksearch</legend>
+          <input type="text" name="quicksearch" value=""
+            class="quicksearch-field" />
+        </fieldset>
+        </form>
+
+        <ul class="link-list">
+        
+          <li><a href="../Matriz_sf.html">Matriz_sf</a></li>
+        
+          <li><a href="../Matriz_sf/Fraccion.html">Matriz_sf::Fraccion</a></li>
+        
+          <li><a href="../Matriz_sf/Matrix.html">Matriz_sf::Matrix</a></li>
+        
+          <li><a href="../Matriz_sf/MatrizDensa.html">Matriz_sf::MatrizDensa</a></li>
+        
+          <li><a href="../Matriz_sf/MatrizDispersa.html">Matriz_sf::MatrizDispersa</a></li>
+        
+          <li><a href="../Matriz_sf/VectorDisperso.html">Matriz_sf::VectorDisperso</a></li>
+        
+          <li><a href="../MatrizSf.html">MatrizSf</a></li>
+        
+        </ul>
+        <div id="no-class-search-results" style="display: none;">No matching classes.</div>
+      </div>
+
+      
+    </div>
+  </div>
+
+  <div id="documentation">
+    <h1 class="class">Matriz_sf::Fraccion</h1>
+
+    <div id="description" class="description">
+      
+<p>CLase <a href="Fraccion.html">Fraccion</a>. Representa un numero
+fraccionario en formato decimal o fraccionario</p>
+
+    </div><!-- description -->
+
+    
+    
+    
+    <div id="5Buntitled-5D" class="documentation-section">
+      
+
+      
+
+      
+
+      
+      <!-- Attributes -->
+      <div id="attribute-method-details" class="method-section section">
+        <h3 class="section-header">Attributes</h3>
+
+        
+        <div id="denom-attribute-method" class="method-detail">
+          <a name="denom"></a>
+          
+          <a name="denom="></a>
+          
+          <div class="method-heading attribute-method-heading">
+            <span class="method-name">denom</span><span
+              class="attribute-access-type">[RW]</span>
+          </div>
+
+          <div class="method-description">
+          
+          
+          
+          </div>
+        </div>
+        
+        <div id="num-attribute-method" class="method-detail">
+          <a name="num"></a>
+          
+          <a name="num="></a>
+          
+          <div class="method-heading attribute-method-heading">
+            <span class="method-name">num</span><span
+              class="attribute-access-type">[RW]</span>
+          </div>
+
+          <div class="method-description">
+          
+          
+          
+          </div>
+        </div>
+        
+      </div><!-- attribute-method-details -->
+      
+
+      <!-- Methods -->
+      
+      <div id="public-class-method-details" class="method-section section">
+        <h3 class="section-header">Public Class Methods</h3>
+
+      
+        <div id="new-method" class="method-detail ">
+          <a name="method-c-new"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">new</span><span
+              class="method-args">(a, b)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            
+            
+
+            
+            <div class="method-source-code" id="new-source">
+<pre>
+<span class="ruby-comment"># File lib/matriz_sf.rb, line 169</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">initialize</span>(<span class="ruby-identifier">a</span>, <span class="ruby-identifier">b</span>)
+    <span class="ruby-identifier">x</span> = <span class="ruby-identifier">mcd</span>(<span class="ruby-identifier">a</span>,<span class="ruby-identifier">b</span>)
+    <span class="ruby-ivar">@num</span> = <span class="ruby-identifier">a</span><span class="ruby-operator">/</span><span class="ruby-identifier">x</span>
+    <span class="ruby-ivar">@denom</span> = <span class="ruby-identifier">b</span><span class="ruby-operator">/</span><span class="ruby-identifier">x</span>
+    <span class="ruby-keyword">if</span> (<span class="ruby-ivar">@num</span> <span class="ruby-operator">&lt;</span> <span class="ruby-value">0</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-ivar">@denom</span> <span class="ruby-operator">&lt;</span> <span class="ruby-value">0</span>)
+        <span class="ruby-ivar">@num</span> = <span class="ruby-ivar">@num</span> * <span class="ruby-value">-1</span>
+        <span class="ruby-ivar">@denom</span> = <span class="ruby-ivar">@denom</span> * <span class="ruby-value">-1</span>
+    <span class="ruby-keyword">end</span>
+    <span class="ruby-keyword">if</span> (<span class="ruby-ivar">@denom</span> <span class="ruby-operator">&lt;</span> <span class="ruby-value">0</span>)
+        <span class="ruby-ivar">@denom</span> = <span class="ruby-ivar">@denom</span> * <span class="ruby-value">-1</span>
+        <span class="ruby-ivar">@num</span> = <span class="ruby-ivar">@num</span> * <span class="ruby-value">-1</span>
+    <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- new-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- new-method -->
+
+      
+      </div><!-- public-class-method-details -->
+    
+      <div id="public-instance-method-details" class="method-section section">
+        <h3 class="section-header">Public Instance Methods</h3>
+
+      
+        <div id="25-method" class="method-detail ">
+          <a name="method-i-25"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">%</span><span
+              class="method-args">(o)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>Metodo que realiza el modulo entre numeros fraccionales.</p>
+            
+
+            
+            <div class="method-source-code" id="25-source">
+<pre>
+<span class="ruby-comment"># File lib/matriz_sf.rb, line 229</span>
+<span class="ruby-keyword">def</span> <span class="ruby-operator">%</span>(<span class="ruby-identifier">o</span>)
+    <span class="ruby-comment"># Comprobacion en caso de que el numero a sumar no sea fraccionario.            </span>
+    <span class="ruby-keyword">if</span> <span class="ruby-identifier">o</span>.<span class="ruby-identifier">instance_of?</span> <span class="ruby-constant">Fixnum</span>
+        <span class="ruby-identifier">c</span> = <span class="ruby-constant">Fraccion</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">o</span>,<span class="ruby-value">1</span>)
+        <span class="ruby-identifier">division</span> = <span class="ruby-constant">Fraccion</span>.<span class="ruby-identifier">new</span>(<span class="ruby-ivar">@num</span> * <span class="ruby-identifier">c</span>.<span class="ruby-identifier">denom</span>, <span class="ruby-ivar">@denom</span> * <span class="ruby-identifier">c</span>.<span class="ruby-identifier">num</span>)
+    <span class="ruby-keyword">else</span>
+        <span class="ruby-identifier">division</span> = <span class="ruby-constant">Fraccion</span>.<span class="ruby-identifier">new</span>(<span class="ruby-ivar">@num</span> * <span class="ruby-identifier">o</span>.<span class="ruby-identifier">denom</span>, <span class="ruby-ivar">@denom</span> * <span class="ruby-identifier">o</span>.<span class="ruby-identifier">num</span>)
+    <span class="ruby-keyword">end</span>  
+    <span class="ruby-identifier">division</span>.<span class="ruby-identifier">num</span> <span class="ruby-operator">%</span> <span class="ruby-identifier">division</span>.<span class="ruby-identifier">denom</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- 25-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- 25-method -->
+
+      
+        <div id="2A-method" class="method-detail ">
+          <a name="method-i-2A"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">*</span><span
+              class="method-args">(o)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            
+            
+
+            
+            <div class="method-source-code" id="2A-source">
+<pre>
+<span class="ruby-comment"># File lib/matriz_sf.rb, line 211</span>
+<span class="ruby-keyword">def</span> *(<span class="ruby-identifier">o</span>)
+    <span class="ruby-keyword">if</span> <span class="ruby-identifier">o</span>.<span class="ruby-identifier">instance_of?</span> <span class="ruby-constant">Fixnum</span>
+        <span class="ruby-identifier">c</span> = <span class="ruby-constant">Fraccion</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">o</span>,<span class="ruby-value">1</span>)
+        <span class="ruby-constant">Fraccion</span>.<span class="ruby-identifier">new</span>(<span class="ruby-ivar">@num</span> * <span class="ruby-identifier">c</span>.<span class="ruby-identifier">num</span>, <span class="ruby-ivar">@denom</span> * <span class="ruby-identifier">c</span>.<span class="ruby-identifier">denom</span>)
+    <span class="ruby-keyword">else</span>
+        <span class="ruby-constant">Fraccion</span>.<span class="ruby-identifier">new</span>(<span class="ruby-ivar">@num</span> * <span class="ruby-identifier">o</span>.<span class="ruby-identifier">num</span>, <span class="ruby-ivar">@denom</span> * <span class="ruby-identifier">o</span>.<span class="ruby-identifier">denom</span>)
+    <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- 2A-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- 2A-method -->
+
+      
+        <div id="2B-method" class="method-detail ">
+          <a name="method-i-2B"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">+</span><span
+              class="method-args">(o)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            
+            
+
+            
+            <div class="method-source-code" id="2B-source">
+<pre>
+<span class="ruby-comment"># File lib/matriz_sf.rb, line 195</span>
+<span class="ruby-keyword">def</span> <span class="ruby-operator">+</span>(<span class="ruby-identifier">o</span>)
+    <span class="ruby-keyword">if</span> <span class="ruby-identifier">o</span>.<span class="ruby-identifier">instance_of?</span> <span class="ruby-constant">Fixnum</span>
+        <span class="ruby-identifier">c</span> = <span class="ruby-constant">Fraccion</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">o</span>,<span class="ruby-value">1</span>)
+        <span class="ruby-constant">Fraccion</span>.<span class="ruby-identifier">new</span>(<span class="ruby-ivar">@num</span> * <span class="ruby-identifier">c</span>.<span class="ruby-identifier">denom</span> <span class="ruby-operator">+</span> <span class="ruby-ivar">@denom</span> * <span class="ruby-identifier">c</span>.<span class="ruby-identifier">num</span>, <span class="ruby-ivar">@denom</span> * <span class="ruby-identifier">c</span>.<span class="ruby-identifier">denom</span>)
+    <span class="ruby-keyword">else</span>
+        <span class="ruby-constant">Fraccion</span>.<span class="ruby-identifier">new</span>(<span class="ruby-ivar">@num</span> * <span class="ruby-identifier">o</span>.<span class="ruby-identifier">denom</span> <span class="ruby-operator">+</span> <span class="ruby-ivar">@denom</span> * <span class="ruby-identifier">o</span>.<span class="ruby-identifier">num</span>, <span class="ruby-ivar">@denom</span> * <span class="ruby-identifier">o</span>.<span class="ruby-identifier">denom</span>)
+    <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- 2B-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- 2B-method -->
+
+      
+        <div id="2D-method" class="method-detail ">
+          <a name="method-i-2D"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">-</span><span
+              class="method-args">(o)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            
+            
+
+            
+            <div class="method-source-code" id="2D-source">
+<pre>
+<span class="ruby-comment"># File lib/matriz_sf.rb, line 203</span>
+<span class="ruby-keyword">def</span> <span class="ruby-operator">-</span>(<span class="ruby-identifier">o</span>)
+    <span class="ruby-keyword">if</span> <span class="ruby-identifier">o</span>.<span class="ruby-identifier">instance_of?</span> <span class="ruby-constant">Fixnum</span>
+        <span class="ruby-identifier">c</span> = <span class="ruby-constant">Fraccion</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">o</span>,<span class="ruby-value">1</span>)
+        <span class="ruby-constant">Fraccion</span>.<span class="ruby-identifier">new</span>(<span class="ruby-ivar">@num</span> * <span class="ruby-identifier">c</span>.<span class="ruby-identifier">denom</span> <span class="ruby-operator">-</span> <span class="ruby-ivar">@denom</span> * <span class="ruby-identifier">c</span>.<span class="ruby-identifier">num</span>, <span class="ruby-ivar">@denom</span> * <span class="ruby-identifier">c</span>.<span class="ruby-identifier">denom</span>)
+    <span class="ruby-keyword">else</span>
+        <span class="ruby-constant">Fraccion</span>.<span class="ruby-identifier">new</span>(<span class="ruby-ivar">@num</span> * <span class="ruby-identifier">o</span>.<span class="ruby-identifier">denom</span> <span class="ruby-operator">-</span> <span class="ruby-ivar">@denom</span> * <span class="ruby-identifier">o</span>.<span class="ruby-identifier">num</span>, <span class="ruby-ivar">@denom</span> * <span class="ruby-identifier">o</span>.<span class="ruby-identifier">denom</span>)
+    <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- 2D-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- 2D-method -->
+
+      
+        <div id="2D-40-method" class="method-detail ">
+          <a name="method-i-2D-40"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">-@</span><span
+              class="method-args">()</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>Metodo que realiza el opuesto de un numero fraccional.</p>
+            
+
+            
+            <div class="method-source-code" id="2D-40-source">
+<pre>
+<span class="ruby-comment"># File lib/matriz_sf.rb, line 251</span>
+<span class="ruby-keyword">def</span> <span class="ruby-operator">-@</span>
+    <span class="ruby-keyword">if</span> (<span class="ruby-ivar">@num</span> <span class="ruby-operator">&gt;</span> <span class="ruby-value">0</span>)
+        <span class="ruby-ivar">@num</span> = <span class="ruby-ivar">@num</span> * <span class="ruby-value">-1</span>
+    <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- 2D-40-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- 2D-40-method -->
+
+      
+        <div id="2F-method" class="method-detail ">
+          <a name="method-i-2F"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">/</span><span
+              class="method-args">(o)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            
+            
+
+            
+            <div class="method-source-code" id="2F-source">
+<pre>
+<span class="ruby-comment"># File lib/matriz_sf.rb, line 219</span>
+<span class="ruby-keyword">def</span> <span class="ruby-operator">/</span>(<span class="ruby-identifier">o</span>)
+    <span class="ruby-comment"># Comprobacion en caso de que el numero a sumar no sea fraccionario.      </span>
+    <span class="ruby-keyword">if</span> <span class="ruby-identifier">o</span>.<span class="ruby-identifier">instance_of?</span> <span class="ruby-constant">Fixnum</span>
+        <span class="ruby-identifier">c</span> = <span class="ruby-constant">Fraccion</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">o</span>,<span class="ruby-value">1</span>)
+        <span class="ruby-constant">Fraccion</span>.<span class="ruby-identifier">new</span>(<span class="ruby-ivar">@num</span> * <span class="ruby-identifier">c</span>.<span class="ruby-identifier">denom</span>, <span class="ruby-ivar">@denom</span> * <span class="ruby-identifier">c</span>.<span class="ruby-identifier">num</span>)
+    <span class="ruby-keyword">else</span>
+        <span class="ruby-constant">Fraccion</span>.<span class="ruby-identifier">new</span>(<span class="ruby-ivar">@num</span> * <span class="ruby-identifier">o</span>.<span class="ruby-identifier">denom</span>, <span class="ruby-ivar">@denom</span> * <span class="ruby-identifier">o</span>.<span class="ruby-identifier">num</span>)
+    <span class="ruby-keyword">end</span>        
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- 2F-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- 2F-method -->
+
+      
+        <div id="3C-3D-3E-method" class="method-detail ">
+          <a name="method-i-3C-3D-3E"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">&lt;=&gt;</span><span
+              class="method-args">(o)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>Metodo que realiza comparaciones entre numeros fraccionales.</p>
+            
+
+            
+            <div class="method-source-code" id="3C-3D-3E-source">
+<pre>
+<span class="ruby-comment"># File lib/matriz_sf.rb, line 257</span>
+<span class="ruby-keyword">def</span> <span class="ruby-operator">&lt;=&gt;</span>(<span class="ruby-identifier">o</span>)
+   <span class="ruby-comment"># return nil unless (o.instance_of? Fraccion) || (o.instance_of? Fixnum)</span>
+    <span class="ruby-comment"># Comprobacion en caso de que el numero a sumar no sea fraccionario.            </span>
+    <span class="ruby-keyword">if</span> <span class="ruby-identifier">o</span>.<span class="ruby-identifier">instance_of?</span> <span class="ruby-constant">Fixnum</span>
+       <span class="ruby-comment"># c = Fraccion.new(o,1)</span>
+       (<span class="ruby-keyword">self</span>.<span class="ruby-identifier">num</span>.<span class="ruby-identifier">to_f</span><span class="ruby-operator">/</span><span class="ruby-keyword">self</span>.<span class="ruby-identifier">denom</span>.<span class="ruby-identifier">to_f</span>) <span class="ruby-operator">&lt;=&gt;</span>  (<span class="ruby-identifier">o</span>.<span class="ruby-identifier">to_f</span><span class="ruby-operator">/</span><span class="ruby-value">1.0</span>)
+    <span class="ruby-keyword">else</span>
+       (<span class="ruby-keyword">self</span>.<span class="ruby-identifier">num</span>.<span class="ruby-identifier">to_f</span><span class="ruby-operator">/</span><span class="ruby-keyword">self</span>.<span class="ruby-identifier">denom</span>.<span class="ruby-identifier">to_f</span>) <span class="ruby-operator">&lt;=&gt;</span> (<span class="ruby-identifier">o</span>.<span class="ruby-identifier">num</span>.<span class="ruby-identifier">to_f</span><span class="ruby-operator">/</span><span class="ruby-identifier">o</span>.<span class="ruby-identifier">denom</span>.<span class="ruby-identifier">to_f</span>) 
+    <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- 3C-3D-3E-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- 3C-3D-3E-method -->
+
+      
+        <div id="abs-method" class="method-detail ">
+          <a name="method-i-abs"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">abs</span><span
+              class="method-args">()</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>Metodo que almacena el valor absoluto de un numero fraccional.</p>
+            
+
+            
+            <div class="method-source-code" id="abs-source">
+<pre>
+<span class="ruby-comment"># File lib/matriz_sf.rb, line 240</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">abs</span>
+    <span class="ruby-ivar">@num</span> = <span class="ruby-ivar">@num</span>.<span class="ruby-identifier">abs</span>
+    <span class="ruby-ivar">@denom</span> = <span class="ruby-ivar">@denom</span>.<span class="ruby-identifier">abs</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- abs-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- abs-method -->
+
+      
+        <div id="coerce-method" class="method-detail ">
+          <a name="method-i-coerce"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">coerce</span><span
+              class="method-args">(o)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            
+            
+
+            
+            <div class="method-source-code" id="coerce-source">
+<pre>
+<span class="ruby-comment"># File lib/matriz_sf.rb, line 267</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">coerce</span>(<span class="ruby-identifier">o</span>)
+    [<span class="ruby-constant">Fraccion</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">o</span>,<span class="ruby-value">1.0</span>),<span class="ruby-keyword">self</span>]
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- coerce-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- coerce-method -->
+
+      
+        <div id="mcd-method" class="method-detail ">
+          <a name="method-i-mcd"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">mcd</span><span
+              class="method-args">(u, v)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            
+            
+
+            
+            <div class="method-source-code" id="mcd-source">
+<pre>
+<span class="ruby-comment"># File lib/matriz_sf.rb, line 182</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">mcd</span>(<span class="ruby-identifier">u</span>, <span class="ruby-identifier">v</span>)
+   <span class="ruby-identifier">u</span>, <span class="ruby-identifier">v</span> = <span class="ruby-identifier">u</span>.<span class="ruby-identifier">abs</span>, <span class="ruby-identifier">v</span>.<span class="ruby-identifier">abs</span>
+   <span class="ruby-keyword">while</span> <span class="ruby-identifier">v</span> <span class="ruby-operator">!=</span> <span class="ruby-value">0</span>
+      <span class="ruby-identifier">u</span>, <span class="ruby-identifier">v</span> = <span class="ruby-identifier">v</span>, <span class="ruby-identifier">u</span> <span class="ruby-operator">%</span> <span class="ruby-identifier">v</span>
+   <span class="ruby-keyword">end</span>
+   <span class="ruby-identifier">u</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- mcd-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- mcd-method -->
+
+      
+        <div id="reciprocal-method" class="method-detail ">
+          <a name="method-i-reciprocal"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">reciprocal</span><span
+              class="method-args">()</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>Metodo que realiza el reciproco de un numero fraccional.</p>
+            
+
+            
+            <div class="method-source-code" id="reciprocal-source">
+<pre>
+<span class="ruby-comment"># File lib/matriz_sf.rb, line 245</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">reciprocal</span>
+    <span class="ruby-identifier">x</span> = <span class="ruby-ivar">@num</span>
+    <span class="ruby-ivar">@num</span> = <span class="ruby-ivar">@denom</span>
+    <span class="ruby-ivar">@denom</span> = <span class="ruby-identifier">x</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- reciprocal-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- reciprocal-method -->
+
+      
+        <div id="to_f-method" class="method-detail ">
+          <a name="method-i-to_f"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">to_f</span><span
+              class="method-args">()</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            
+            
+
+            
+            <div class="method-source-code" id="to_f-source">
+<pre>
+<span class="ruby-comment"># File lib/matriz_sf.rb, line 192</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">to_f</span>
+    <span class="ruby-ivar">@num</span>.<span class="ruby-identifier">to_f</span><span class="ruby-operator">/</span><span class="ruby-ivar">@denom</span>.<span class="ruby-identifier">to_f</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- to_f-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- to_f-method -->
+
+      
+        <div id="to_s-method" class="method-detail ">
+          <a name="method-i-to_s"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">to_s</span><span
+              class="method-args">()</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            
+            
+
+            
+            <div class="method-source-code" id="to_s-source">
+<pre>
+<span class="ruby-comment"># File lib/matriz_sf.rb, line 189</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">to_s</span>
+    <span class="ruby-node">&quot;#{@num}/#{@denom}&quot;</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- to_s-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- to_s-method -->
+
+      
+      </div><!-- public-instance-method-details -->
+    
+    </div><!-- 5Buntitled-5D -->
+  
+
+  </div><!-- documentation -->
+
+  <div id="validator-badges">
+    <p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+    <p><small>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish
+      Rdoc Generator</a> 2</small>.</p>
+  </div>
+
+</body>
+</html>
+
