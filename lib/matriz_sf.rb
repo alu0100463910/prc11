@@ -3,9 +3,11 @@
 module Matriz_sf
     class Matrix
         attr_reader :filas, :columnas
+	#constructor clase Matrix
         def initialize(filas,columnas)
             @filas, @columnas = filas, columnas
         end
+	#operador suma  +
         def +(o)
             raise ArgumentError, "Matrix size must be equal" unless @filas == o.filas && @columnas == o.columnas
             c = MatrizDensa.new(@filas, @columnas)
@@ -24,6 +26,7 @@ module Matriz_sf
             end
             c
         end
+	#operador resta -
         def -(o)
             raise ArgumentError, "Matrix size must be equal" unless @filas == o.filas && @columnas == o.columnas
             c = MatrizDensa.new(@filas, @columnas)
@@ -42,6 +45,7 @@ module Matriz_sf
             end
             c
         end
+	#Operador multiplicacion
         def *(o)
             raise ArgumentError, "Columns and Rows must be equal" unless (@columnas == o.filas)
             c = MatrizDensa.new(@filas,o.columnas)
@@ -56,24 +60,24 @@ module Matriz_sf
             end
             c
         end
+	#valor maximo de una matriz
         def max
             value = -9999
             @filas.times do |i|
                 @columnas.times do |j|
-                    if self[i][j] != nil && (self[i][j] > value)   
-		        puts self[i][j]
+                    if self[i][j] != nil && (self[i][j] > value)
                         value = self[i][j]
                     end
                 end
             end
             value
         end
+	#Valor minimo de una matriz
         def min
             value = 999
             @filas.times do |i|
                 @columnas.times do |j|
                     if self[i][j] != nil && self[i][j] < value
-		        puts value
                         value = self[i][j]
                     end
                 end
@@ -81,8 +85,10 @@ module Matriz_sf
             value
         end
     end
+    #clase matriz Densa. Representa una matriz de numeros reales 
     class MatrizDensa < Matrix
         attr_reader :data
+	#constructor de la clase matriz densa en funcion de los parametros de entrada
 	def initialize *arg
 	  case arg.size
 	    when 1
@@ -96,13 +102,16 @@ module Matriz_sf
 	    else
 	      "error"
 	  end
-        end	
+        end
+	#operador de indexacion
         def [](i)
             @data[i]
         end
+	#operador de indexacion y asignacion
         def []=(i,value)
             @data[i] = value
         end
+	#se devuelve la traspuesta de una matriz
         def traspuesta()
             c = MatrizDensa.new(@columnas, @filas)
             c.filas.times do |i|
@@ -120,6 +129,7 @@ module Matriz_sf
             end
         end
     end
+    #Clase vector disperso
     class VectorDisperso
         attr_reader :vector
         def initialize(h = {})
@@ -133,6 +143,7 @@ module Matriz_sf
             @vector[i]=j
         end
     end
+    #Clase Matriz dispersa. Representa un amatriz dispersa
     class MatrizDispersa < Matrix
         attr_reader :data
         def initialize(filas,columnas, h = {})
@@ -150,6 +161,7 @@ module Matriz_sf
             @data[i]
         end
     end
+    #CLase Fraccion. Representa un numero fraccionario en formato decimal o fraccionario
     class Fraccion
         include Comparable
 
