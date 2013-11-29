@@ -57,25 +57,11 @@ module Matriz_sf
             c
         end
         def max
-            encontrado = false
-            value = 0
-            i = -1
-            while encontrado == false
-                i += 1
-                j = 0
-                while j < self.columnas
-                    if self[i][j] != nil and value == 0
-                        value = self[i][j]
-                        encontrado = true
-                        break
-                    else
-                        j += 1
-                    end
-                end
-            end
+            value = -9999
             @filas.times do |i|
                 @columnas.times do |j|
-                    if self[i][j] != nil && self[i][j] > value
+                    if self[i][j] != nil && (self[i][j] > value) ==-1
+		        puts self[i][j]
                         value = self[i][j]
                     end
                 end
@@ -83,30 +69,15 @@ module Matriz_sf
             value
         end
         def min
-            encontrado = false
-            value = 0
-            i = -1
-            while encontrado == false
-                i += 1
-                j = 0
-                while j < self.columnas
-                    if self[i][j] != nil and value == 0
-                        value = self[i][j]
-                        encontrado = true
-                        break
-                    else
-                        j += 1
-                    end
-                end
-            end
+            value = 999
             @filas.times do |i|
                 @columnas.times do |j|
                     if self[i][j] != nil && self[i][j] < value
+		        puts value
                         value = self[i][j]
                     end
                 end
             end
-            
             value
         end
     end
@@ -115,7 +86,6 @@ module Matriz_sf
 	def initialize *arg
 	  case arg.size
 	    when 1
-	    #  init_array *arg
 	      m=arg.pop
 	      @data = m 
 	      super(m[0].size, m.size)
@@ -276,10 +246,10 @@ module Matriz_sf
             return nil unless (o.instance_of? Fraccion) || (o.instance_of? Fixnum)
             # Comprobacion en caso de que el numero a sumar no sea fraccionario.            
             if o.instance_of? Fixnum
-                c = Fraccion.new(o,1)
-                (c.num.to_f/c.denom.to_f) <=> (self.num.to_f/self.denom.to_f)
+               # c = Fraccion.new(o,1)
+               (self.num.to_f/self.denom.to_f) <=>  (o.to_f/1.0)
             else
-                (self.num.to_f/self.denom.to_f) <=> (o.num.to_f/o.denom.to_f)
+	       (self.num.to_f/self.denom.to_f) <=> (o.num.to_f/o.denom.to_f) 
             end
         end
         def coerce(o)
@@ -287,6 +257,19 @@ module Matriz_sf
         end
     end
 end
+
+a = Matriz_sf::MatrizDensa.new(2,2)
+a[0][0] = Matriz_sf::Fraccion.new(1,1)
+a[0][1] = 4
+a[1][0] = Matriz_sf::Fraccion.new(3,1)
+a[1][1] = Matriz_sf::Fraccion.new(-2,1)
+puts a.data.inspect
+puts "Max======"
+puts a.max
+puts "=========Min"
+puts a.min
+
+
 
 
 
